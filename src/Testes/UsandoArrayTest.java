@@ -2,11 +2,12 @@ package Testes;
 
 import Modelos.UsandoArray;
 import org.junit.jupiter.api.Test;
+
 import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class UsandoArrayTest {
+public class UsandoArrayTest {
     int[][] testes = {
             {11, 4, 8, 10, 2},
             {9, 3, 6, 1, 13, 4},

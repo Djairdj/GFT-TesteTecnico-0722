@@ -10,14 +10,15 @@ import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ImpostosTest {
+public class ImpostosTest {
+    static Scanner scanner = new Scanner(System.in);
     double[] valores = {-100, 1_000d, 17_000, 24_999d, 25_000d, 100_000d};
     double[] respostasIPI = {0d, 50d, 850d, 1_249.95d, 2_500d, 10_000d};
     double[] respostasICMS = {0d, 300d, 5_100d, 7_499.7d, 7_500d, 30_000d};
     double[] respostasCOFINS = {0d, 0d, 0d, 1_999.92d, 2_000, 8_000d};
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         Icms icms = new Icms();
         Ipi ipi = new Ipi();
         Cofins cofins = new Cofins();
@@ -36,7 +37,6 @@ class ImpostosTest {
             System.out.println("COFINS: " + cof);
             System.out.println("Valor final: " + soma);
         }
-        scanner.close();
     }
 
     private static double calcularImpostos(Imposto imposto, double value) {

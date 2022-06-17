@@ -28,8 +28,7 @@ public class FuncionarioTest {
         System.out.printf("Valor do ganho bruto anual: %.2f.\n", f.calcularGanhoBrutoAnual());
         System.out.printf("Valor do ganho liquido anual: %.2f.\n", f.calcularGanhoLiquidoAnual());
         System.out.printf("Valor do ganho liquido mensal: %.2f.\n", f.calcularGanhoLiquidoMensal());
-        System.out.printf("Valor do ganho imposto anual: %.2f.\n", f.calcularImposto());
-
+        System.out.printf("Valor do imposto anual: %.2f.\n", f.calcularImposto());
     }
 
     @Test

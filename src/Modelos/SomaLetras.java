@@ -4,12 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SomaLetras {
-    public static void main(String[] args) {
-        String[] entradas = {"Meu código não precisa de comentários",  "Eu conserto depois", "É só uma pequena mudança"};
-        for (String txt : entradas) {
-            System.out.printf("%s vale %d.\n", txt, somarLetras(txt));
-        }
-    }
+
     public  static int somarLetras(String texto){
         List<Character> alfabeto = new ArrayList<>();
         char letra = 'a';

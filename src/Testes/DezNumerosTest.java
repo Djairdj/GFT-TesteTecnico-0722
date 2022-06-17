@@ -2,7 +2,7 @@ package Testes;
 
 import Modelos.DezNumeros;
 
-class DezNumerosTest {
+public class DezNumerosTest {
 
     public static void main(String[] args) {
         DezNumeros dez = new DezNumeros();

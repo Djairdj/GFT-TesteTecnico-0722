@@ -5,7 +5,7 @@ import Modelos.Multiplicacao;
 import Modelos.Soma;
 import Modelos.Subtracao;
 
-class OperationsTest {
+public class OperationsTest {
 
     public static void main(String[] args) {
         Soma sum = new Soma();
@@ -28,7 +28,7 @@ class OperationsTest {
             System.out.printf("Multiplicando %d com %d dah %.2f.\n", a, b, m.calcular(a, b));
             try {
                 System.out.printf("Dividindo %d por %d dah %.2f.\n", a, b, div.calcular(a, b));
-            }catch (ArithmeticException e){
+            } catch (ArithmeticException ignored) {
             }
         }
     }
